@@ -107,7 +107,7 @@ def press(button):
         raw_request = app.getTextArea("Request")
         filename = app.getEntry("Filename")
         protocol = app.getRadioButton("protocol").lower()
-        if filename is "":
+        if filename == "":
             filename = FILENAME_DEFAULT
         error = None
         try:
